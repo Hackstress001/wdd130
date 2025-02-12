@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Water Rafting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/logos/z-crossedoars.jpeg" alt="Logo">
+      
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Trips</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>White Water Rafting</h1>
+        <div class="hero-content">
+            <p>Experience the thrill of navigating rushing rapids, breathtaking scenery, and the excitement of outdoor adventure. Whether you're a beginner or an experienced rafter. </p>
+            <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/logos/z-crossedoars.jpeg" alt="Logo">
+        </div>
+    </section>
+
+    <section class="history">
+        <h2>History</h2>
+        <div class="history-content">
+            <p>White water rafting has a long history of adventure, excitement, and exploration. The sport has evolved from simple wooden rafts to modern inflatable boats that offer safety and thrill.</p>
+            <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/logos/z-crossedoars.jpeg" alt="Logo">
+            <p>Over the years, rafting has become a popular outdoor activity for thrill-seekers and nature lovers alike, offering incredible experiences on some of the world's most scenic rivers.</p>
+        </div>
+    </section>
+
+    <section class="adventure">
+        <h2>Adventure Awaits You</h2>
+        <div class="adventure-gallery">
+            <figure>
+                <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/logos/z-boat-splash.png" alt="Los Dientes del Diablo">
+                <figcaption>Los Dientes del Diablo</figcaption>
+            </figure>
+            <figure>
+                <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/logos/z-boat-splash.png" alt="Big Mallard">
+                <figcaption>Big Mallard</figcaption>
+            </figure>
+            <figure>
+                <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/logos/z-boat-splash.png" alt="Half Day Adventure">
+                <figcaption>Half Day Adventure</figcaption>
+            </figure>
+            <figure>
+                <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/logos/z-boat-splash.png" alt="Snake River Rapids">
+                <figcaption>Snake River Rapids</figcaption>
+            </figure>
+            <figure>
+                <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/logos/z-boat-splash.png" alt="Grand Canyon Rapids">
+                <figcaption>Grand Canyon Rapids</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <footer>
+        <p>Footer Content including Social Media Icons/Links</p>
+        <div class="social-icons">
+          <img src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000" alt="Social Icon">
+            <img src="https://img.icons8.com/?size=100&id=phOKFKYpe00C&format=png&color=000000" alt="Social Icon">
+            <img src="https://img.icons8.com/?size=100&id=118640&format=png&color=000000" alt="Social Icon">
+       
+        </div>
+    </footer>
+
+</body>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Header using CSS Grid */
+header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    background-color: #c3a2e0;
+    padding: 15px;
+    height: 80px;
+}
+
+/* Logo Styling */
+.logo img {
+    width: 60px;
+    height: 60px;
+}
+
+/* Nav using CSS Flex */
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.hero-content p {
+    width: 60%;
+    text-align: left;
+}
+
+.hero-content img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* History Section using CSS Grid */
+.history {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.history-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Adventure Section using Flexbox */
+.adventure {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+}
+
+.adventure-gallery figure {
+    text-align: center;
+    width: 18%;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+figcaption {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #c3a2e0;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+</style>
+</html>
