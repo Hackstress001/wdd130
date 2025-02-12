@@ -1,1 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Rafting Company</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Rafting Company</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <h2>Contact Us</h2>
+        
+        <section class="company-info">
+            <h3>Our Location</h3>
+            <p>📍 123 Adventure Lane, River Town, USA</p>
+            <p>📞 (123) 456-7890</p>
+            <p>📧 contact@raftingcompany.com</p>
+            
+            <!-- Embedded Google Map -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093644!2d144.9537353156166!3d-37.816279742021115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5df4f4f4f9%3A0x5c8f6f4f4f4f4f4f!2sSome+Location!5e0!3m2!1sen!2sus!4v1617182938493"
+                width="100%" height="300" allowfullscreen="" loading="lazy">
+            </iframe>
+        </section>
+
+        <section class="employees">
+            <h3>Meet Our Team</h3>
+            <div class="employee">
+                <img src="https://img.freepik.com/free-photo/black-businesswoman-smiling_74855-1086.jpg?t=st=1739372506~exp=1739376106~hmac=3c7b2a771e041c8c2e1db6fcc7d70d338a08094cc084150377572ea8534c8819&w=740">
+                <p>Jane Smith- Tour Guide</p>
+            </div>
+            <div class="employee">
+                <img src="https://img.freepik.com/free-photo/well-dressed-manager_1098-1944.jpg?t=st=1739372779~exp=1739376379~hmac=7fb37a214cec82f154843cfb6d22ba097144eb89dc9a7fe52f9b63490558a7b1&w=740" alt="Jane Smith">
+                <p>John Doe - Customer Service</p>
+            </div>
+            <div class="employee">
+                <img src=" https://img.freepik.com/free-photo/happy-young-african-businessman_171337-736.jpg?t=st=1739372878~exp=1739376478~hmac=cfe61064abcc164d5d818f27b3adfc0fe6fc1d057bc0df8b65e6d6f4250ff980&w=740" alt="Mike Johnson">
+                <p>Mike Johnson - Safety Instructor</p>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form action="submit-form.php" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <fieldset>
+                    <legend>Purpose of Message:</legend>
+                    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                </fieldset>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Rafting Company | All Rights Reserved</p>
+    </footer>
+</body>
+<style>
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li .active {
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Company Info */
+.company-info, .employees, .contact-form {
+    margin-bottom: 30px;
+}
+
+.company-info p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Google Map */
+iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+}
+
+/* Employee Profiles */
+.employees {
+    text-align: center;
+}
+
+.employee {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+.employee img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #0077b6;
+}
+
+.employee p {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* ✨ Styled Contact Form */
+.contact-form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+    text-align: center;
+    color: #0077b6;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input Fields */
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 120px;
+}
+
+/* Radio Buttons */
+fieldset {
+    border: none;
+    margin: 10px 0;
+}
+
+fieldset legend {
+    font-weight: bold;
+}
+
+.contact-form input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Checkbox */
+.contact-form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* ✨ Submit Button */
+.contact-form button {
+    background: #0077b6;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #005a8e;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #0077b6;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 0 0 10px 10px;
+}
+</style>
+  </html>
